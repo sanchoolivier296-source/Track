@@ -1,0 +1,306 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microcontroller vs Microprocessor</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            margin: 0;
+            color: sky pink;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: slategrey;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #ddd;
+        }
+
+        h2 {
+            color: #1769aa;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(220px, 1fr)
+            );
+            gap: 15px;
+        }
+
+        .device {
+            background-color: #eef6ff;
+            padding: 18px;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: slateblue;
+            color: white;
+        }
+
+        .note {
+            background-color: #eef6ff;
+            padding: 15px;
+            border-left: 4px solid slateblue;
+        }
+
+        footer {
+            background-color: slateblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                padding: 20px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Difference between Microcontroller & Microprocessor</h1>
+    <p>Understanding ESP32, ESP8266 and Arduino Uno</p>
+</header>
+
+<main>
+
+    <section>
+        <h2>1. Meaning of a Microprocessor?</h2>
+
+        <p>
+            A microprocessor is the Central Processing Unit (CPU)
+            on a chip. It processes instructions and performs
+            calculations. It usually needs external memory and
+            other components to build a complete computer system.
+        </p>
+
+        <p>
+            <strong>Examples:</strong> Intel Core and AMD Ryzen.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. Meaning of a Microcontroller?</h2>
+
+        <p>
+            A microcontroller is a small computer built into
+            one chip. It combines a CPU, memory and input/output
+            peripherals. It is designed to control electronic
+            devices and perform specific tasks.
+        </p>
+
+        <p>
+            <strong>Examples:</strong> ESP32, ESP8266 and
+            ATmega328P.
+        </p>
+    </section>
+
+    <section>
+        <h2>3. Mainly Differences</h2>
+
+        <table>
+            <tr>
+                <th>Microprocessor</th>
+                <th>Microcontroller</th>
+            </tr>
+
+            <tr>
+                <td>Mainly contains the CPU.</td>
+                <td>Contains CPU, memory and I/O peripherals.</td>
+            </tr>
+
+            <tr>
+                <td>Usually needs external memory.</td>
+                <td>Usually has memory built into the chip.</td>
+            </tr>
+
+            <tr>
+                <td>Used in computers and laptops.</td>
+                <td>Used in embedded systems and electronics.</td>
+            </tr>
+
+            <tr>
+                <td>Designed for general computing.</td>
+                <td>Designed for specific control tasks.</td>
+            </tr>
+        </table>
+
+        <p class="note">
+            <strong>Point to remember:</strong>
+            A microprocessor is mainly a CPU, while a
+            microcontroller is a small computer on one chip.
+        </p>
+    </section>
+
+    <section>
+        <h2>4. ESP32, ESP8266 and Arduino Uno</h2>
+
+        <div class="grid">
+
+            <div class="device">
+                <h3>ESP32</h3>
+
+                <p>
+                    ESP32 is a microcontroller system-on-chip
+                    family. Many models have built-in Wi-Fi
+                    and Bluetooth.
+                </p>
+
+                <strong>Uses:</strong>
+                <p>IoT projects, smart homes and robotics.</p>
+            </div>
+
+            <div class="device">
+                <h3>ESP8266</h3>
+
+                <p>
+                    ESP8266 is a Wi-Fi-enabled microcontroller
+                    system-on-chip used to connect devices
+                    to wireless networks.
+                </p>
+
+                <strong>Uses:</strong>
+                <p>Wireless sensors and IoT projects.</p>
+            </div>
+
+            <div class="device">
+                <h3>Arduino Uno</h3>
+
+                <p>
+                    Arduino Uno is a development board.
+                    The classic Uno R3 uses the ATmega328P
+                    microcontroller.
+                </p>
+
+                <strong>Uses:</strong>
+                <p>LEDs, motors, sensors and robotics.</p>
+            </div>
+
+        </div>
+
+        <p class="note">
+            ESP32 and ESP8266 are chip families.
+            Arduino Uno is a development board.
+        </p>
+    </section>
+
+    <section>
+        <h2>5. Quick Comparison</h2>
+
+        <table>
+            <tr>
+                <th>Device</th>
+                <th>Type</th>
+                <th>Wireless</th>
+            </tr>
+
+            <tr>
+                <td>ESP32</td>
+                <td>Microcontroller SoC</td>
+                <td>Wi-Fi and Bluetooth on many models</td>
+            </tr>
+
+            <tr>
+                <td>ESP8266</td>
+                <td>Microcontroller SoC</td>
+                <td>Wi-Fi</td>
+            </tr>
+
+            <tr>
+                <td>Arduino Uno R3</td>
+                <td>Development board</td>
+                <td>No built-in Wi-Fi or Bluetooth</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>6. for Example: Smart Parking System</h2>
+
+        <p>
+            Think an automatic parking system:
+        </p>
+
+        <ul>
+            <li>A sensor detects whether a parking space is occupied.</li>
+
+            <li>The microcontroller reads the sensor information.</li>
+
+            <li>ESP32 or ESP8266 can send the information
+                through Wi-Fi to a website.</li>
+
+            <li>The website displays the number of
+                occupied and available parking spaces.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7.In Short Summary</h2>
+
+        <ul>
+            <li>Microprocessor: Mainly a CPU.</li>
+
+            <li>Microcontroller: CPU, memory and I/O on one chip.</li>
+
+            <li>ESP32: Microcontroller with Wi-Fi and Bluetooth
+                on many models.</li>
+
+            <li>ESP8266: Wi-Fi microcontroller.</li>
+
+            <li>Arduino Uno: Development board using
+                ATmega328P in the classic R3 version.</li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>Microprocessor vs Microcontroller | Short explanation!!!</p>
+</footer>
+
+</body>
+</html>
